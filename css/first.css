@@ -1,0 +1,36 @@
+/* body */
+body{
+    background-color: #caf0f8!important;
+    font-family: 'Josefin Sans', sans-serif!important;
+}
+
+/* navbar */
+.navbar{
+    background-color: #1d3557;
+}
+/* container */
+.main{
+    margin-top: 60px;
+}
+.logo-sym{
+    margin-top: 120px;
+}
+.first{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.first-img{
+    width: 500px;
+}
+.my-card{
+    margin-top: 110px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.bg-info-custom{
+    background-color:white!important;
+}
+.modal-content{
+    background-color: #caf0f8!important;
+}
+.modal-header{
+    background-color: #1d3557;
+}
