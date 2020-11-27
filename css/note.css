@@ -9,14 +9,5 @@ body{
 }
 /* container */
 .main{
-    margin-top:88px;
+    margin-top:100px;
 }
-.vamm{
-    color: #59E4C3;
-    background-color: #1d3557;
-}
-.cl{
-    background-image: url("../img/patternpad.png");
-    background-size: cover;
-    color: white;   
-}   
