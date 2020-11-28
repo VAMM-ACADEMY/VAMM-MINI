@@ -11,3 +11,13 @@ body{
 .main{
     margin-top:100px;
 }
+.cl{
+    background-image: url("../img/patternpad.png");
+    background-size: cover!important;
+    color: white; 
+    border-radius: 10px;  
+} 
+/* footer */
+.footer{
+    background-color: #1d3557;
+}

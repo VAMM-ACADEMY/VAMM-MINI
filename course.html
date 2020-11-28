@@ -34,8 +34,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="note.html">Notes</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Materials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="note.html">Notes</a>
+                        <a class="dropdown-item" href="Question.html">Practice Questions </a>
+                    </div>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="course.html">Courses</a>
@@ -78,7 +85,8 @@
                                         <iframe src="https://www.youtube.com/embed/WQ0rMiUNeIo" frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen></iframe>
-                                        <p class="font-weight-bold">Introduction To C++ | C++</p>
+                                        <p class="font-weight-bold mb-0">Introduction To C++ | C++  <a class="btn btn-primary badge-pill btn-sm ml-" href="#" role="button">Notes</a> </p>
+                                       
 
                                         <iframe class="mt-2" src="https://www.youtube.com/embed/CL2xW4W2zKQ"
                                             frameborder="0"
@@ -203,6 +211,14 @@
         </div>
     </div>
     <!-- container //-->
+    <!-- footer -->
+      <footer class="footer fixed-bottom mt-auto py-3 mt-5">
+        <div class="container">
+          <span class="text-muted">Copyright © All rights reserved | <img src="img/logo.png" height="40"
+            alt="" loading="lazy">.</span>
+        </div>
+      </footer>
+    <!-- footer// -->
 </body>
 <!-- js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

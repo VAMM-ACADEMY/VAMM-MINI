@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <a class="navbar-brand" href="index.html">
@@ -34,8 +35,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="note.html">Notes</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Materials
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="note.html">Notes</a>
+                        <a class="dropdown-item" href="Question.html">Practice Questions </a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="course.html">Courses</a>
@@ -67,8 +75,9 @@
                         <div class="mt-3">
                             <a class="btn btn-info badge-pill btn-lg mr-2" href="#" data-toggle="modal"
                                 data-target="#staticBackdrop" role="button">Get Started</a>
-                            <a class="btn btn-light text-dark badge-pill btn-lg" href="#watch" data-toggle="modal" id="btn"
-                                data-target="#staticBackdrop2" onclick="playPause1()" role="button"><i class="far fa-play-circle"></i> Watch
+                            <a class="btn btn-light text-dark badge-pill btn-lg" href="#watch" data-toggle="modal"
+                                id="btn" data-target="#staticBackdrop2" onclick="playPause1()" role="button"><i
+                                    class="far fa-play-circle"></i> Watch
                                 Video</a>
                         </div>
                     </div>
@@ -119,17 +128,20 @@
                         <div class="modal-content border-0">
                             <div class="modal-header text-white">
                                 <!-- <h5 class="modal-title" id="staticBackdropLabel">Get Started</h5> -->
-                                <button type="button" onclick="playPause()" class="close text-white" data-dismiss="modal" aria-label="Close">
+                                <button type="button" onclick="playPause()" class="close text-white"
+                                    data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
                             <div class="modal-body">
                                 <!-- intro -->
-                                <video  id="video1"  width="100%" controls>
+                                 <video id="video1" width="100%" controls>
 
-                                    <source src="video/VAMMACADEMY.mp4" type="video/mp4">
+                                    <source src="video/VAMM-ACADEMY.mp4" type="video/mp4">
 
-                                </video>
+                                </video> 
+                                <!-- <iframe src="https://drive.google.com/file/d/1A5yPw6dOvOsFlHsNmN3nKIw9ofL3YZ4y/preview"
+                                    allowfullscreen  width="100%" style="min-height: 200px; max-height: 800px;" frameborder="0"> </iframe> -->
                                 <!-- intro// -->
                             </div>
                         </div>
@@ -141,7 +153,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 mb-3">
+            <div class="col-md-12 mb-5">
                 <p class="h1 text-center font-weight-bold text-capitalize my-card mb-5">our Features</p>
                 <!-- card -->
                 <div class="card-deck">
@@ -184,12 +196,22 @@
 
     <!-- container// -->
     <!-- footer -->
-    <footer class="footer mt-auto py-3">
+    <footer class="footer fixed-bottom mt-auto py-3">
         <div class="container">
-          <span class="text-muted">Copyright © All rights reserved | <img src="img/logo.png" height="40"
-            alt="" loading="lazy">.</span>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="text-muted">Copyright © All rights reserved | <img src="img/logo.png" height="40"
+                            alt="" loading="lazy">.</span>
+                </div>
+                <div class="col-md-6 text-right">
+                    <!-- <a href="https://www.youtube.com/channel/UC7auvPGFU4PAdf1OHlKkV9Q" target="_blank" class="text-danger"><i
+                            class="fab fa-youtube mt-2 fa-2x"></i></a>
+                            <i class="fab fa-facebook text-primary mt-2 fa-2x"></i> -->
+                </div>
+            </div>
+
         </div>
-      </footer>
+    </footer>
     <!-- footer// -->
 </body>
 <!-- js -->

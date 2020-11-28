@@ -34,6 +34,10 @@ body{
 .modal-header{
     background-color: #1d3557;
 }
+/* iframe {
+    min-height: 100px!important; 
+    max-height: 500px!important; 
+} */
 /* footer */
 .footer{
     background-color: #1d3557;

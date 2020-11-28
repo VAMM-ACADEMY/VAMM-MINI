@@ -17,6 +17,10 @@ body{
 }
 .cl{
     background-image: url("../img/patternpad.png");
-    background-size: cover;
-    color: white;   
+    color: white;  
+    border-radius: 10px;  
 }   
+/* footer */
+.footer{
+    background-color: #1d3557;
+}
