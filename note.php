@@ -1,3 +1,36 @@
+<?php
+session_start();
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "VAMM";
+
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+if($_SESSION['Email']==''){
+	header("location: login.php");
+}
+
+$email = $_SESSION['Email'];
+$result = mysqli_query($conn,"SELECT * FROM VAMMS where Email = '$email'");
+// if ($result)
+// {
+//     echo "this is working ";
+// }
+// else 
+// {
+//     echo "this is not working";
+// }
+$row = mysqli_fetch_array($result);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +52,7 @@
 <body>
     <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
             <img src="img/logo.png" height="60px" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -29,10 +62,10 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto pr-4">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home </a>
+                    <a class="nav-link" href="index.php">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="about.php">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -40,15 +73,15 @@
                         Materials
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="note.html">Notes</a>
-                        <a class="dropdown-item" href="Question.html">Practice Questions </a>
+                        <a class="dropdown-item" href="note.php">Notes</a>
+                        <a class="dropdown-item" href="Question.php">Practice Questions </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="course.html">Courses</a>
+                    <a class="nav-link" href="course.php">Courses</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-info badge-pill text-white" href="login.html">Login</a>
+                <a class="btn btn-info badge-pill text-white" href="logout.php"><?php echo $row['FULLNAME']; ?> Logout</a>
                 </li>
             </ul>
         </div>

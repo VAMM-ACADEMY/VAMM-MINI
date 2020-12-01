@@ -1,3 +1,7 @@
+<?php
+ session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +23,7 @@
 <body>
     <!-- nav -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="home.html">
             <img src="img/logo.png" height="60px" alt="" loading="lazy">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -29,26 +33,15 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto pr-4">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="home.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Materials
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="note.html">Notes</a>
-                        <a class="dropdown-item" href="Question.html">Practice Questions </a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="course.html">Courses</a>
-                </li>
+               
+                
                 <li class="nav-item active">
-                    <a class="btn btn-info badge-pill text-white" href="login.html">Login</a>
+                    <a class="btn btn-info badge-pill text-white" href="login.php">Login</a>
                 </li>
             </ul>
         </div>
@@ -60,27 +53,28 @@
             <div class="col-md-4"></div>
             <div class="col-md-4 shadow rounded-lg bg-white mb-5">
                 <!-- login form -->
-                <form class="pt-3 mb-5">
+               
+                <form class="pt-3 mb-5" action="config.php" method="POST">
                     <div class="text-center mb-2">
                         <img src="img/Logo-sym.png"  height="60px" alt="vamm-sym">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control badge-pill" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
+                            aria-describedby="emailHelp" name="Email">
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                             else.</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control badge-pill" id="exampleInputPassword1">
+                        <input type="password" name="Password" class="form-control badge-pill" id="exampleInputPassword1">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <a href="#" role="button">Forget Password?</a>
-                    </div>
+                    </div> -->
                     <button type="submit" class="btn btn-info badge-pill">Login</button>
                     <div class="text-right mb-2">
-                        <a href="create.html" role="button">Create a Account?</a>
+                        <a href="create.php" role="button">Create a Account?</a>
                     </div>
                 </form>
                 <!-- login form// -->
