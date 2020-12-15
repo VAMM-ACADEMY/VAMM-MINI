@@ -1,5 +1,6 @@
 <?php
 include 'conn.php';
+mysqli_close($conn);
 session_start();
 //destroy the session
 session_unset();

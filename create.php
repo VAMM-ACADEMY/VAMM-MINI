@@ -66,22 +66,24 @@ session_start();
                             <div class="form-group">
                                 <label for="exampleInputName1">Full Name</label>
                                 <input type="text" class="form-control badge-pill"
-                                    aria-describedby="NameHelp" name="FULLNAME" required>
+                                    aria-describedby="NameHelp" name="FULLNAME" placeholder="Full Name" title="Name should contain Alphabets only" pattern="^[A-Za-z -]+$"  required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email</label>
                                 <input type="Email" class="form-control badge-pill" 
-                                    aria-describedby="emailHelp" name="Email" required>
+                                    aria-describedby="emailHelp" name="Email" placeholder="Email" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="Password" class="form-control badge-pill" 
-                                    name="Password" required>
+                                    name="Password" id="password1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Password must contain minimum 8 characters, including minimum one Alphabet (one uppercase and one lowercase), one Numeric and one Special Character." oninput="setPasswordConfirmValidity();" required>
                             </div>
-                            <!-- <div class="form-group">
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Confirm Password</label>
-                                <input type="password" class="form-control badge-pill" name="Password_2">
-                            </div> -->
+                                <input type="password" class="form-control badge-pill" id="password2" placeholder="Confirm Password"     
+                                oninput="setPasswordConfirmValidity();" title="The input must match the above type Password." name="Password_2">
+                            </div> 
 
                             <button type="submit" class="btn btn-info badge-pill mb-3 btn-block">Join us</button>
                         </form>
@@ -111,6 +113,20 @@ session_start();
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
+     <script>
+      function setPasswordConfirmValidity(str) {
+          const password1 = document.getElementById('password1');
+          const password2 = document.getElementById('password2');
+  
+          if (password1.value === password2.value) {
+               password2.setCustomValidity('');
+          } else {
+              password2.setCustomValidity('Passwords must match');
+          }
+          console.log('password2 customError ', document.getElementById('password2').validity.customError);
+          console.log('password2 validationMessage ', document.getElementById('password2').validationMessage);
+      }
+  </script>
 <!-- js// -->
 
 </html>

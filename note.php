@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "VAMM";
+$servername = "sql205.epizy.com";
+$username = "epiz_27228889";
+$password = "OdqdNVmsjWZ0";
+$dbname = "epiz_27228889_VAMM";
 
 
 // Create connection
@@ -78,7 +78,7 @@ $row = mysqli_fetch_array($result);
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="course.php">Courses</a>
+                    <a class="nav-link" href="course.php">Video</a>
                 </li>
                 <li class="nav-item">
                 <a class="btn btn-info badge-pill text-white" href="logout.php"><?php echo $row['FULLNAME']; ?> Logout</a>
@@ -122,10 +122,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/HTML.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/15Mri4XfkzZrLIIBIDwCfiCDqJGejBVlq/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/HTML.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/15Mri4XfkzZrLIIBIDwCfiCDqJGejBVlq/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">HTML</a>
                                                 </div>
                                             </div>
@@ -133,10 +133,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/C++.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1ORqbOXiS7aQWAGeU2SBFQaHqHeV53zEd/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/C++.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1ORqbOXiS7aQWAGeU2SBFQaHqHeV53zEd/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">C++</a>
                                                 </div>
                                             </div>
@@ -144,10 +144,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/CSS.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1vxBElDIsB9LoWoij8ymZIqKZdxC6jMsS/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/CSS.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1vxBElDIsB9LoWoij8ymZIqKZdxC6jMsS/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">CSS</a>
                                                 </div>
                                             </div>
@@ -161,10 +161,10 @@ $row = mysqli_fetch_array($result);
                                         <div class="card-deck">
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/Java.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1PUUoktcdMXISysGEve9QuXe98muanQZS/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/Java.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1PUUoktcdMXISysGEve9QuXe98muanQZS/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">JAVA</a>
                                                 </div>
                                             </div>
@@ -172,10 +172,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/javascript.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1OrPLs2u07pK7lslLTPYkJIQBHY4Gp0_m/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/javascript.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1OrPLs2u07pK7lslLTPYkJIQBHY4Gp0_m/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">JAVASCRIPT</a>
                                                 </div>
                                             </div>
@@ -183,10 +183,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/python.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1tLVzhw_P9tWe5YgPg9g7uEbldksjCNAk/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/python.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1tLVzhw_P9tWe5YgPg9g7uEbldksjCNAk/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">PYTHON</a>
                                                 </div>
                                             </div>
@@ -206,10 +206,10 @@ $row = mysqli_fetch_array($result);
                                         <div class="card-deck">
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/Linux OS.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/15iIKRwznCV2xfmr6RuZNMl8ezQfjGnYh/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/Linux OS.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/15iIKRwznCV2xfmr6RuZNMl8ezQfjGnYh/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">Linux OS</a>
                                                 </div>
                                             </div>
@@ -231,10 +231,10 @@ $row = mysqli_fetch_array($result);
                                         <div class="card-deck">
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/Network Fundamentals.pdf"
+                                                    <p class="h4"> <a href="notes/https://drive.google.com/file/d/1Y547gZqgO7lAt6maGkFmnhFCD7JHbq68/view?usp=sharing"
                                                             target="_blank" class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/Network Fundamentals.pdf" target="_blank"
+                                                    </p> <a href="notes/https://drive.google.com/file/d/1Y547gZqgO7lAt6maGkFmnhFCD7JHbq68/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">Network Fundamentals</a>
                                                 </div>
                                             </div>
@@ -242,10 +242,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/ACN(Advance Computer Network).pdf"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1CT8CfQVwrJYAyzEfejjlPBgC8899wX_p/view?usp=sharing"
                                                             target="_blank" class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/ACN(Advance Computer Network).pdf"
+                                                    </p> <a href="https://drive.google.com/file/d/1CT8CfQVwrJYAyzEfejjlPBgC8899wX_p/view?usp=sharing"
                                                         target="_blank" class="btn btn-primary btn-sm">ACN(Advance
                                                         Computer Network)</a>
                                                 </div>
@@ -267,10 +267,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/DBMS Skills 1.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1TzGBmKqfrNeSc2sKSm_WvIzCdcQ8LELA/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/DBMS Skills 1.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1TzGBmKqfrNeSc2sKSm_WvIzCdcQ8LELA/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">DBMS Skills 1</a>
                                                 </div>
                                             </div>
@@ -278,10 +278,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/DBMS Skills 2.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1q3bKnrfXcscbNEPhot-ZMRdZbvR4lztS/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/DBMS Skills 2.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1q3bKnrfXcscbNEPhot-ZMRdZbvR4lztS/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">DBMS Skills 2</a>
                                                 </div>
                                             </div>
@@ -302,10 +302,11 @@ $row = mysqli_fetch_array($result);
                                             <div class="card text-center">
                                                 <div class="card-body">
                                                     <p class="h4"> <a
-                                                            href="notes/IPS(Information processing Skills).pdf"
+                                                            href="https://drive.google.com/file/d/12qJqgJ2vdZ2rcdk3p0-3KkJtH2xNy2nM/view?usp=sharing"
                                                             target="_blank" class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/IPS(Information processing Skills).pdf"
+                                                    </p> <a
+                                                            href="https://drive.google.com/file/d/12qJqgJ2vdZ2rcdk3p0-3KkJtH2xNy2nM/view?usp=sharing"
                                                         target="_blank" class="btn btn-primary btn-sm">IPS(Information
                                                         processing
                                                         Skills)</a>
@@ -315,10 +316,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/Digital Electronics.pdf"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1DZE6sYwKfYAUVj4W00gdqwtjwB47XbiH/view?usp=sharing"
                                                             target="_blank" class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/Digital Electronics.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1DZE6sYwKfYAUVj4W00gdqwtjwB47XbiH/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">Digital Electronics</a>
                                                 </div>
                                             </div>
@@ -326,10 +327,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/Software Testing.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/1tWf6EK326USOl8TQdI8XlEw4kqHR7E4N/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/Software Testing.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/1tWf6EK326USOl8TQdI8XlEw4kqHR7E4N/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">Software Testing</a>
                                                 </div>
                                             </div>
@@ -344,10 +345,10 @@ $row = mysqli_fetch_array($result);
 
                                             <div class="card text-center">
                                                 <div class="card-body">
-                                                    <p class="h4"> <a href="notes/Cloud Computing.pdf" target="_blank"
+                                                    <p class="h4"> <a href="https://drive.google.com/file/d/17JK3W_Fm-Enzkr4rwHfDT2q5iq1YjDwd/view?usp=sharing" target="_blank"
                                                             class="mb-0"><i
                                                                 class="far fa-file-pdf fa-4x pt-2 text-dark"></i></a>
-                                                    </p> <a href="notes/Cloud Computing.pdf" target="_blank"
+                                                    </p> <a href="https://drive.google.com/file/d/17JK3W_Fm-Enzkr4rwHfDT2q5iq1YjDwd/view?usp=sharing" target="_blank"
                                                         class="btn btn-primary btn-sm">Cloud Computing</a>
                                                 </div>
                                             </div>
@@ -368,6 +369,22 @@ $row = mysqli_fetch_array($result);
         </div>
     </div>
     <!-- container //-->
+     <!-- floating button -->
+    <div class="zoom mb-5">
+    <a class="zoom-fab zoom-btn-large text-decoration-none bg-primary text-white" title="Question and Query" id="zoomBtn"><i class="far fa-comment-dots fa-2x pt-3"></i></a>
+    <ul class="zoom-menu pt-2">
+      <li><a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out text-white" href="mailto:bvocsdcc@gmail.com"><i class="fas fa-at"></i></a></li>
+      <li><a class="zoom-fab zoom-btn-sm zoom-btn-doc scale-transition scale-out text-white" href="https://t.me/VAMMACADEMY" target="_blank"><i class="fas fa-paper-plane"></i></a></li>
+    </ul>
+    <!-- <div class="zoom-card scale-transition scale-out">
+      <ul class="zoom-card-content">
+      <li>Content</li>
+      <li>Content</li>
+
+      </ul>
+    </div> -->
+  </div>
+    <!-- floating button// -->
     <!-- footer -->
     <footer class="footer fixed-bottom mt-auto py-3 mt-5">
         <div class="container">
@@ -389,6 +406,7 @@ $row = mysqli_fetch_array($result);
     crossorigin="anonymous"></script>
 <script src="js/button.js"></script>
 <script src="js/test.js"></script>
+<script src="js/floating.js">
 <!-- js// -->
 
 </html>

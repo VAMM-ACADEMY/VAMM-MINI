@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "VAMM";
+$servername = "sql205.epizy.com";
+$username = "epiz_27228889";
+$password = "OdqdNVmsjWZ0";
+$dbname = "epiz_27228889_VAMM";
 
 
 // Create connection
@@ -15,7 +15,7 @@ if (!$conn) {
 }
 
 if($_SESSION['Email']==''){
-	header("location: login.php");
+	header("location: home.html");
 }
 
 $email = $_SESSION['Email'];
@@ -81,7 +81,7 @@ $row = mysqli_fetch_array($result);
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="course.php">Courses</a>
+                    <a class="nav-link" href="course.php">Video</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-info badge-pill text-white" href="logout.php"><?php echo $row['FULLNAME']; ?> Logout</a>
@@ -108,8 +108,6 @@ $row = mysqli_fetch_array($result);
                             A better way to grow your Learning Skills.
                         </p>
                         <div class="mt-3">
-                            <a class="btn btn-info badge-pill btn-lg mr-2" href="#" data-toggle="modal"
-                                data-target="#staticBackdrop" role="button">Get Started</a>
                             <a class="btn btn-light text-dark badge-pill btn-lg" href="#watch" data-toggle="modal"
                                 id="btn" data-target="#staticBackdrop2" onclick="playPause1()" role="button"><i
                                     class="far fa-play-circle"></i> Watch
@@ -170,14 +168,11 @@ $row = mysqli_fetch_array($result);
                             </div>
                             <div class="modal-body">
                                 <!-- intro -->
-                                 <video id="video1" width="100%" controls>
+                                 <video id="video1" width="100%">
 
                                     <source src="video/VAMM-ACADEMY.mp4" type="video/mp4">
 
                                 </video> 
-                                <!-- <iframe src="https://drive.google.com/file/d/1A5yPw6dOvOsFlHsNmN3nKIw9ofL3YZ4y/preview"
-                                    allowfullscreen  width="100%" style="min-height: 200px; max-height: 800px;" frameborder="0"> </iframe> -->
-                                <!-- intro// -->
                             </div>
                         </div>
                     </div>
@@ -203,7 +198,7 @@ $row = mysqli_fetch_array($result);
                     <div class="card bg-info-custom  border-0 shadow">
                         <img src="img/undraw/undraw_online_video_ivvq.svg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title font-weight-bold">Free Online Courses</h5>
+                            <h5 class="card-title font-weight-bold">Free Video Lectures</h5>
                             <p class="card-text">We provide you videos lectures on programming languages and about
                                 software development.</p>
                         </div>
@@ -230,6 +225,22 @@ $row = mysqli_fetch_array($result);
     </div>
 
     <!-- container// -->
+     <!-- floating button -->
+    <div class="zoom mb-5">
+    <a class="zoom-fab zoom-btn-large text-decoration-none bg-primary text-white" title="Question and Query" id="zoomBtn"><i class="far fa-comment-dots fa-2x pt-3"></i></a>
+    <ul class="zoom-menu pt-2">
+      <li><a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out text-white" href="mailto:bvocsdcc@gmail.com"><i class="fas fa-at"></i></a></li>
+      <li><a class="zoom-fab zoom-btn-sm zoom-btn-doc scale-transition scale-out text-white" href="https://t.me/VAMMACADEMY" target="_blank"><i class="fas fa-paper-plane"></i></a></li>
+    </ul>
+    <!-- <div class="zoom-card scale-transition scale-out">
+      <ul class="zoom-card-content">
+      <li>Content</li>
+      <li>Content</li>
+
+      </ul>
+    </div> -->
+  </div>
+    <!-- floating button// -->
     <!-- footer -->
     <footer class="footer fixed-bottom mt-auto py-3">
         <div class="container">
@@ -261,6 +272,7 @@ $row = mysqli_fetch_array($result);
     crossorigin="anonymous"></script>
 <script src="js/button.js"></script>
 <script src="js/test.js"></script>
+<script src="js/floating.js"></script>
 <!-- js// -->
 
 </html>

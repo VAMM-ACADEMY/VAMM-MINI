@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "VAMM";
+$servername = "sql205.epizy.com";
+$username = "epiz_27228889";
+$password = "OdqdNVmsjWZ0";
+$dbname = "epiz_27228889_VAMM";
 
 $Email = $_POST['Email'];
 $Password = $_POST['Password'];
@@ -25,8 +25,7 @@ if ($result)
 }
 else
  {
-     echo "password or email is not correct try again :)";
-     header( "refresh:2;url=login.php" );
+     header("location:wrong.php" );
 }
 
 
@@ -38,3 +37,5 @@ if (!$conn) {
 // echo "Connected successfully";
 // header( "refresh:2;url=index.html" );
 ?>
+
+

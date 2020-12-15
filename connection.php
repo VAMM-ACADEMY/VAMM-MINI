@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "VAMM";
+$servername = "sql205.epizy.com";
+$username = "epiz_27228889";
+$password = "OdqdNVmsjWZ0";
+$dbname = "epiz_27228889_VAMM";
 
 // get the post records
 $FULLNAME = $_POST['FULLNAME'];
@@ -32,3 +32,4 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
+

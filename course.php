@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "VAMM";
+$servername = "sql205.epizy.com";
+$username = "epiz_27228889";
+$password = "OdqdNVmsjWZ0";
+$dbname = "epiz_27228889_VAMM";
 
 
 // Create connection
@@ -30,6 +30,7 @@ $result = mysqli_query($conn,"SELECT * FROM VAMMS where Email = '$email'");
 // }
 $row = mysqli_fetch_array($result);
 ?>
+
 
 
 <!DOCTYPE html>
@@ -79,7 +80,7 @@ $row = mysqli_fetch_array($result);
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="course.php">Courses</a>
+                    <a class="nav-link" href="course.php">Video</a>
                 </li>
                 <li class="nav-item">
                 <a class="btn btn-info badge-pill text-white" href="logout.php"><?php echo $row['FULLNAME']; ?> Logout</a>
@@ -329,6 +330,22 @@ $row = mysqli_fetch_array($result);
         </div>
     </div>
     <!-- container //-->
+     <!-- floating button -->
+    <div class="zoom mb-5">
+    <a class="zoom-fab zoom-btn-large text-decoration-none bg-primary text-white" title="Question and Query" id="zoomBtn"><i class="far fa-comment-dots fa-2x pt-3"></i></a>
+    <ul class="zoom-menu pt-2">
+      <li><a class="zoom-fab zoom-btn-sm zoom-btn-person scale-transition scale-out text-white" href="mailto:bvocsdcc@gmail.com"><i class="fas fa-at"></i></a></li>
+      <li><a class="zoom-fab zoom-btn-sm zoom-btn-doc scale-transition scale-out text-white" href="https://t.me/VAMMACADEMY" target="_blank"><i class="fas fa-paper-plane"></i></a></li>
+    </ul>
+    <!-- <div class="zoom-card scale-transition scale-out">
+      <ul class="zoom-card-content">
+      <li>Content</li>
+      <li>Content</li>
+
+      </ul>
+    </div> -->
+  </div>
+    <!-- floating button// -->
     <!-- footer -->
     <footer class="footer fixed-bottom mt-auto py-3 mt-5">
         <div class="container">
@@ -348,6 +365,7 @@ $row = mysqli_fetch_array($result);
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
+ <script src="js/floating.js"></script>   
 <!-- js// -->
 
 </html>
